@@ -1,0 +1,60 @@
+html{
+    background: linear-gradient(to right, #51dcff, #000000);   
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: inline-block;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    color: white;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 22px);
+    font-size: 1em;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #ffffff;
+    color: #020202;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#map {
+    margin-top: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    height: 400px; 
+}
+
+#logradouro, #bairro, #cidade, #uf {
+    margin: 5px 0;
+    font-size: 1.1em;
+}

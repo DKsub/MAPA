@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAPA</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/mapa.css"> 
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+    <script src="js/mapa.js" defer></script>
+</head>
+<body>
+    <h1>MAPA</h1>
+
+    <div class="container">
+        <label for="cep">CEP:</label>
+        <input type="text" id="cepReceber" maxlength="8" pattern="\d{8}" required>
+
+        <label >Logradouro:</label>
+        <input type="text" id="logradouro">
+        <label for="numero">Número:</label>
+        <input type="text" id="numeroInput" maxlength="4">
+        
+        <div id="complemento">Complemento:</div>
+        <input type="text" id="complementoInput" maxlength="50">
+        
+        <label >Bairro:</label>
+        <input type="text" id="bairro">
+        <label >Cidade:</label>
+        <input type="text" id="cidade">
+        <label >UF:</label>
+        <input type="text" id="uf">
+
+        <label for="logradouroInput">Logradouro:</label>
+        <input type="text" id="logradouroInput" maxlength="100">
+
+        <label for="coordenadasInput">Coordenadas (lat,lng):</label>
+        <input type="text" id="coordenadasInput" placeholder="-23.5505,-46.6333">
+
+        <button id="button">Pesquisar CEP</button>
+    </div>
+
+    <div id="map"></div>
+</body>
+</html>
